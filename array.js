@@ -150,7 +150,36 @@ slice() creates a new array, leaving the original array intact.
 It's a non-mutating method, unlike splice() which directly modifies the array.
 It's useful for extracting, copying, and rearranging array elements without affecting the source.
 It's often used in conjunction with other array methods like map, filter, and reduce to create new arrays with transformed data.
+*/
 
+
+/*
+Array map()
+
+Purpose:
+Creates a new array by calling a provided function on every element of an existing array and storing the results.
+It's used for transforming or mapping elements into a new array without modifying the original one.
+Syntax:
+
+JavaScript
+const newArray = array.map(callbackFunction(element, index, array))
+
+
+callbackFunction: The function to be called on each element. It accepts three arguments:
+element: The current element being processed.
+index (optional): The index of the current element.
+array (optional): The original array being iterated over.
+
+
+Returns:
+A new array containing the transformed elements.
+
+
+Key Points:
+map() creates a new array, leaving the original array intact.
+It's often used for data transformation and creating new arrays with modified elements.
+It can be chained with other array methods like filter and reduce for complex operations.
+It's a powerful tool for working with arrays and manipulating data in JavaScript.
 
 */
   
