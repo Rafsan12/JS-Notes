@@ -146,7 +146,7 @@ function mindGame(numbers)
 }
 
 const positiveNumber = mindGame(5);
-console.log(positiveNumber);
+// console.log(positiveNumber);
 
 /*
 Problem 2: Finding Even Or Odd
@@ -184,4 +184,42 @@ function evenOdd(name)
 }
 
 const names = evenOdd("Batch7");
-console.log(names);
+// console.log(names);
+
+/*
+
+Problem 3: Is Less Or Greater Than Seven
+
+
+তোমাকে একটা Function দেওয়া হবে Called “IsLGSeven()”. এটা ইনপুট হিসেবে একটা Number নিবে।  
+
+এখন তোমার Task: তোমাকে ইনপুট ভ্যালু এবং ৭ এর মধ্যে পার্থক্য বের করতে হবে। যদি এই পার্থক্য ৭ এর চেয়ে ছোট হয়, তখন তোমাকে Return করতে হবে সেই বিয়োগফল। নাহলে তোমাকে Return করতে হবে Double Of The Input। মানে যে সংখ্যা ইনপুট হিসেবে নিয়েছো সেটির দ্বিগুণ।
+
+Input : 6
+
+Output: -1
+
+Input: -15
+
+Output: -22
+
+Input: 15
+
+Output: 30
+
+*/
+
+function IsLGSeven(number)
+{
+    if(number < 7)
+    {
+        return number - 7;
+    }
+    else{
+      return  number * 2;
+    }
+    
+}
+
+const IslessSeven = IsLGSeven(15);
+console.log(IslessSeven);
