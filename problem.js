@@ -147,3 +147,41 @@ function mindGame(numbers)
 
 const positiveNumber = mindGame(5);
 console.log(positiveNumber);
+
+/*
+Problem 2: Finding Even Or Odd
+
+
+তোমাকে একটা Function দেওয়া হবে Called EvenOdd(). এটা ইনপুট হিসেবে একটা String নিবে। 
+
+
+
+এখন তোমার Task: String এ Total কয়টা Character আছে তার উপর ভিত্তি করে আউটপুট দিতে হবে। আউটপুট হবে ‘Even’ অথবা ‘Odd’ ।Sample Input & Output:
+
+
+Input: ‘Phero’
+
+Output: Odd
+
+Input: ‘Batch7’
+
+Output: Even
+
+Input: ‘Chatgpt’
+
+Output: Odd
+
+*/
+
+function evenOdd(name)
+{
+     if(name.length % 2 == 0)
+     {
+        return "Even";
+     }else{
+        return "Odd";
+     }
+}
+
+const names = evenOdd("Batch7");
+console.log(names);
