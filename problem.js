@@ -63,7 +63,7 @@ function paperRequirements(book1,book2,book3)
 }
 
 const paperNeeds = paperRequirements(0,0,3);
-console.log(paperNeeds);
+// console.log(paperNeeds);
 
 // একটা ফাংশন লিখবে। এই ফাংশনের নাম হবে bestFriend তারপর সেই ফাংশনে ইনপুট প্যারামিটার হিসেবে একটা array নিবে। সেই array এর মধ্যে তোমার সব ফ্রেন্ডের নাম থাকবে। এখন তোমার কাজ হচ্ছে যে ফ্রেন্ড এর নাম সবচেয়ে বড় সেই ফ্রেন্ড এর নাম রিটার্ন করে দেয়া। এই ক্ষেত্রে তুমি নামটা অর্থাৎ ফ্রেন্ডের নাম (স্ট্রিং) রিটার্ন করতে হবে।
 
@@ -86,7 +86,7 @@ const friends = ["Rafsan", "Raj", "Ahmed","RRRRRR"];
 
 const bestFriendName = bestFriend(friends);
 
-console.log(bestFriendName); 
+// console.log(bestFriendName); 
 
 // এইটা একটু ট্রিকি হতে পারে। একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে।
 
@@ -108,4 +108,42 @@ function positiveNumbers(numbers)
 
 const numbers = [1,0,30, -7,4,0,-9];
 const findPositiveNumber = positiveNumbers(numbers);
-console.log(findPositiveNumber);
+// console.log(findPositiveNumber);
+
+/*
+তোমাকে একটা Function দেওয়া হবে Called MindGame(” যা ইনপুট হিসেবে একটা Positive Number নিবে।")
+
+
+এখন তোমার Task : তোমাকে সেই নাম্বার এর সাথে 3 গুন করে, তারপর 10 যোগ করে, তারপর 2 দিয়ে ভাগ করে, তারপর 5 বিয়োগ করে, যা আউটপুট আসবে তা Return করতে হবে
+
+Sample Input & Output
+
+Input: 5
+
+Output: 7.5
+
+
+Input: 50
+
+Output: 75
+
+
+Input: 33
+
+Output: 49.5
+
+*/
+
+function mindGame(numbers)
+{
+  const positiveNumber = numbers
+  const numberMulti = positiveNumber * 3;
+  const numberPlus = numberMulti + 10;
+  const numberdivide = numberPlus  / 2;
+  const numberminus = numberdivide - 5;
+
+  return numberminus;
+}
+
+const positiveNumber = mindGame(5);
+console.log(positiveNumber);
